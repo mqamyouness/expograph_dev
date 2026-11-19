@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stickers mural Marrakech | Pub Industrie Maroc</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&amp;family=Barlow+Semi+Condensed:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="asset/css/style.css">
+<style>
+    :root {
+        --blue: #007CFF;
+        --dark-blue: #071A2B;
+        --white: #FFFFFF;
+        --light: #F5F7FA;
+        --text: #071A2B;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #fff;
+        color: var(--dark-blue);
+    }
+
+    /* =========================================
+       MAIN SECTION
+    ========================================= */
+
+    .enseigne-section {
+        width: 100%;
+    }
+
+    /* =========================================
+       EACH ROW
+    ========================================= */
+
+    .enseigne-row {
+        width: 100%;
+        min-height: 420px;
+
+        display: flex;
+        align-items: center;
+
+        padding: 50px 20px;
+    }
+
+    /* =========================================
+       CONTENT WIDTH
+    ========================================= */
+
+    .enseigne-container {
+        width: 100%;
+        max-width: 1200px;
+
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 70px;
+    }
+
+    /* =========================================
+       TEXT
+    ========================================= */
+
+    .enseigne-text {
+        flex: 1;
+        max-width: 540px;
+    }
+
+    .enseigne-text h2 {
+        margin: 0 0 22px 0;
+
+        font-size: 30px;
+        line-height: 1.2;
+
+        font-weight: 700;
+
+        color: var(--dark-blue);
+    }
+
+    .enseigne-text p {
+        margin: 0 0 14px 0;
+
+        font-size: 15px;
+        line-height: 1.65;
+
+        color: var(--dark-blue);
+
+        text-align: left;
+    }
+
+    .enseigne-text strong {
+        font-weight: 700;
+    }
+
+    .blue {
+        color: var(--blue);
+    }
+
+    /* =========================================
+       IMAGE
+    ========================================= */
+
+    .enseigne-image-wrapper {
+        position: relative;
+
+        flex: 0 0 390px;
+
+        width: 390px;
+        height: 330px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        overflow: hidden;
+
+        border: 7px solid var(--blue);
+
+        border-radius:
+            48% 52% 45% 55%
+            /
+            48% 45% 55% 52%;
+    }
+
+    .enseigne-image {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+    }
+
+    /* =========================================
+       ROW 1
+       WHITE
+       TEXT LEFT / IMAGE RIGHT
+    ========================================= */
+
+    .row-one {
+        background: var(--white);
+    }
+
+    .row-one .enseigne-container {
+        flex-direction: row;
+    }
+
+    /* =========================================
+       ROW 2
+       DARK
+       IMAGE LEFT / TEXT RIGHT
+    ========================================= */
+
+    .row-two {
+        background: var(--dark-blue);
+    }
+
+    .row-two .enseigne-container {
+        flex-direction: row-reverse;
+    }
+
+    .row-two .enseigne-text h2 {
+        color: var(--white);
+    }
+
+    .row-two .enseigne-text p {
+        color: var(--white);
+    }
+
+    /* =========================================
+       ROW 3
+       WHITE
+    ========================================= */
+
+    .row-three {
+        background: var(--white);
+    }
+
+    .row-three .enseigne-container {
+        flex-direction: row;
+    }
+
+    .row-three .enseigne-image-wrapper {
+        flex: 0 0 340px;
+
+        width: 340px;
+        height: 285px;
+    }
+
+    /* =========================================
+       ROW 4
+       LIGHT
+    ========================================= */
+
+    .row-four {
+        background: var(--light);
+    }
+
+    .row-four .enseigne-container {
+        flex-direction: row-reverse;
+    }
+
+    .row-four .enseigne-image-wrapper {
+        flex: 0 0 380px;
+
+        width: 380px;
+        height: 330px;
+    }
+
+    /* =========================================
+       DESKTOP LARGE
+    ========================================= */
+
+    @media (min-width: 1400px) {
+
+        .enseigne-container {
+            max-width: 1250px;
+        }
+
+        .enseigne-row {
+            min-height: 470px;
+        }
+
+        .enseigne-text {
+            max-width: 570px;
+        }
+
+        .enseigne-text h2 {
+            font-size: 32px;
+        }
+
+        .enseigne-text p {
+            font-size: 16px;
+        }
+
+        .enseigne-image-wrapper {
+            flex-basis: 420px;
+            width: 420px;
+            height: 350px;
+        }
+
+        .row-three .enseigne-image-wrapper {
+            flex-basis: 370px;
+            width: 370px;
+            height: 310px;
+        }
+
+        .row-four .enseigne-image-wrapper {
+            flex-basis: 410px;
+            width: 410px;
+            height: 350px;
+        }
+    }
+
+    /* =========================================
+       TABLET
+    ========================================= */
+
+    @media (max-width: 900px) {
+
+        .enseigne-row {
+            min-height: auto;
+            padding: 60px 30px;
+        }
+
+        .enseigne-container {
+            max-width: 750px;
+            gap: 40px;
+        }
+
+        .enseigne-text {
+            max-width: 400px;
+        }
+
+        .enseigne-text h2 {
+            font-size: 25px;
+        }
+
+        .enseigne-text p {
+            font-size: 13px;
+        }
+
+        .enseigne-image-wrapper,
+        .row-three .enseigne-image-wrapper,
+        .row-four .enseigne-image-wrapper {
+
+            flex-basis: 280px;
+
+            width: 280px;
+            height: 250px;
+        }
+    }
+
+    /* =========================================
+       MOBILE
+    ========================================= */
+
+    @media (max-width: 650px) {
+
+        .enseigne-row {
+            min-height: auto;
+            padding: 50px 25px;
+        }
+
+        .enseigne-container,
+        .row-two .enseigne-container,
+        .row-four .enseigne-container {
+
+            flex-direction: column;
+
+            gap: 35px;
+
+            align-items: center;
+        }
+
+        .enseigne-text {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .enseigne-text h2 {
+            font-size: 25px;
+        }
+
+        .enseigne-text p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .enseigne-image-wrapper,
+        .row-three .enseigne-image-wrapper,
+        .row-four .enseigne-image-wrapper {
+
+            flex: none;
+
+            width: 300px;
+            height: 260px;
+        }
+    }
+
+    /* =========================================
+       SMALL MOBILE
+    ========================================= */
+
+    @media (max-width: 400px) {
+
+        .enseigne-image-wrapper,
+        .row-three .enseigne-image-wrapper,
+        .row-four .enseigne-image-wrapper {
+
+            width: 260px;
+            height: 230px;
+        }
+
+        .enseigne-text h2 {
+            font-size: 22px;
+        }
+
+        .enseigne-text p {
+            font-size: 13px;
+        }
+    }
+
+</style>
+<meta content="Pour tous vos stickers muraux, de la conception à l’impression et pose d'autocollants muraux. Optez pour de l’adhésif mural en HD et de la décoration de mur en vinyle imprimé de haute qualité." name="description"/></head>
+<body>
+<div aria-label="Chargement" class="page-loader" role="status">
+<img alt="Expograph" src="asset/img/logo-white.png"/>
+</div>
+<section class="hero">
+<div class="hero-yellow"></div>
+<div class="logo-box">
+<img alt="Expograph" src="asset/img/logo.png"/>
+</div>
+<!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+<nav class="navbar">
+<button aria-label="Toggle menu" class="hamburger" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<ul class="nav-list">
+<li class="nav-item has-submenu">
+<a class="nav-link menu-trigger" href="#">
+                    Enseigne
+                    <span class="arrow">▼</span>
+</a>
+<ul class="submenu">
+<li><a href="enseignes-lumineuses.html">Enseignes lumineuses</a></li>
+<li><a href="enseigne-publicitaire.html">Enseigne publicitaire</a></li>
+</ul>
+</li>
+<li class="nav-item has-submenu">
+<a class="nav-link menu-trigger" href="#">
+                    Panneau
+                    <span class="arrow">▼</span>
+</a>
+<ul class="submenu">
+<li><a href="panneaux-publicitaires-lumineux.html">Panneaux publicitaires lumineux</a></li>
+<li><a href="panneaux-publicitaires-non-lumineux.html">Panneaux publicitaires non lumineux</a></li>
+<li><a href="panneaux-drapeau.html">Panneaux drapeau</a></li>
+<li><a href="totem-publicitaire-lumineux.html">Totem</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="signaletique.html">Signalétique</a>
+</li>
+<li class="nav-item has-submenu">
+<a class="nav-link menu-trigger" href="#">
+                    Habillage
+                    <span class="arrow">▼</span>
+</a>
+<ul class="submenu">
+<li><a href="habillage-voiture.html">Habillage voiture</a></li>
+<li><a href="stickers-muraux.html">Stickers muraux</a></li>
+<li><a href="habillage-de-magasin.html">Habillage de magasin</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="impression-serigraphie.html">Impression et Sérigraphie</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Contact</a>
+</li>
+<li class="nav-item has-submenu language-item">
+<a class="nav-link menu-trigger language" href="#">
+                    FR
+                    <span class="arrow">▼</span>
+</a>
+<ul class="submenu language-submenu">
+<li><a href="#">FR</a></li>
+<li><a href="#">EN</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+<!-- =====================================================
+         TITLE
+    ====================================================== -->
+<div class="hero-content">
+<h1 class="hero-title">Stickers muraux</h1>
+</div>
+<!-- =====================================================
+         SERVICES
+    ====================================================== -->
+<div class="services">
+<div class="services-grid">
+<!-- =================================================
+                 1. ENSEIGNE
+            ================================================== -->
+<div class="service">
+<img alt="Fabricant d'enseignes publicitaires sur mesure à Oujda" class="service-image" src="asset/img/enseigne-lumineuse.png" title="Enseigne lumineuse sur-mesure à Oujda, Maroc"/>
+<h2 class="service-title">
+                    Enseigne Lumineuse
+                </h2>
+<a class="service-button" href="/fr/nos-metiers/enseignes-lumineuses">
+                    Demander des infos
+                </a>
+</div>
+<!-- =================================================
+                 2. PANNEAU
+            ================================================== -->
+<div class="service">
+<img alt="Panneau publicitaire &amp; Plaque Signalétique à Oujda, Maroc" class="service-image" src="asset/img/panneau-publicitaire.png" title="Fabricant panneau publicitaire | Conception, Fabrication, Pose"/>
+<h2 class="service-title">
+                    Panneau publicitaire
+                </h2>
+<a class="service-button" href="/fr/nos-metiers/panneaux-publicitaires-lumineux">
+                    Découvrir
+                </a>
+</div>
+<!-- =================================================
+                 3. VEHICLE
+            ================================================== -->
+<div class="service">
+<img alt="Habillage de voiture Marrakecha" class="service-image" src="asset/img/habillage-voiture.png" title="Habillage et Marquage de véhicule à Marrakecha"/>
+<h2 class="service-title">
+                    Habillage de voiture
+                </h2>
+<a class="service-button" href="/fr/nos-metiers/habillage-voiture">
+                    En savoir plus
+                </a>
+</div>
+</div>
+</div>
+</section>
+<section class="enseigne-section"><div class="enseigne-row row-one">
+<div class="enseigne-container">
+<div class="enseigne-text">
+<h2>Décoration de mural</h2>
+<p>PUB INDUSTRIE vous offre un panel de service de décoration d’intérieur adéquat à chaque besoin et enveloppe budgétaire. Pour une pose de <strong>décoration mural</strong> personnalisée, <strong>un marquage de mur</strong> en 3D, un projet d’habillage de vitrines ou de cloisons, ou encore pour la création d’<strong>autocollants pour meubles</strong>, tous les ingrédients sont bons pour satisfaire votre demande dans les meilleures conditions.</p>
+<p>À l’aide de nos équipes spécialisées et régulièrement formées aux nouveautés du métier, vous aurez la possibilité d’installer et de poser les meilleurs éléments décoratifs pour votre entreprise, tout en réalisant d’énormes économies en matière de temps et de budget.</p>
+<p>Chez PUB INDUSTRIE, quel que soit le matériau choisi, vous aurez la garantie d’une finition irréprochable. Vous avez un éventuel projet déco ? Discutons ensemble les solutions de faisabilités possibles pour sa concrétisation ! <br/></p>
+</div>
+<div class="enseigne-image-wrapper">
+<img alt="Décoration de mural" class="enseigne-image" src="https://pub-industrie.com/img/post/167084688985417.png"/>
+</div>
+</div>
+</div><div class="enseigne-row row-two">
+<div class="enseigne-container">
+<div class="enseigne-text">
+<h2>Décoration de mur avec logo 3D</h2>
+<p>Un bel <strong>marquage de murs en 3D</strong> fera toujours son effet au cœur de votre commerce ou entreprise. Rien de plus saisissant que d’allier créativité et découpe de métaux pour un résultat décoratif impressionnant.</p>
+<p>Pour la création et la <strong>fabrication de logo 3D</strong> ou pour la <strong>fabrication logo en relief à Marrakech</strong> et partout au Maroc, sollicitez l’expertise de l’entreprise PUB INDUSTRIE. Nous sommes spécialisés dans tous les travaux de marquage en 3D et d’habillage de mur depuis 2014.</p>
+<p>Notre équipe qualifiée et formée de designers, de techniciens et d’artisans, saura vous guider dans le choix des matériaux ainsi que des découpes, les plus fidèles à votre charte graphique ainsi qu’à votre activité.  Pour une demande de devis détaillé, n’hésitez pas de nous contacter. Nous sommes à votre écoute via tél au numéro : <a href="tel:05244-48453" target="_blank">05244-48453</a>.<br/></p>
+</div>
+<div class="enseigne-image-wrapper">
+<img alt="Décoration de mur avec logo 3D" class="enseigne-image" src="https://pub-industrie.com/img/post/16708471475453.png"/>
+</div>
+</div>
+</div><div class="enseigne-row row-three">
+<div class="enseigne-container">
+<div class="enseigne-text">
+<h2>Stickers mural</h2>
+<p>Quand vous prévoyez d’habiller vos murs intérieurs, rien de plus agréable que de penser à des <b>autocollants muraux</b>. Dans un cadre professionnel ou pour sa propre habitation, ce type d’habillage offre à votre environnement un caractère unique et authentique.</p>
+<p>Vous pouvez choisir un habillage de couleurs et de formes différentes, comme vous pouvez diffuser des messages expressifs bien ciblés avec un peu d’humour. Vous désirez donner vie à vos locaux ? PUB INDUSTRIE vous propose un service d’habillage et <b>stickers de mur</b> intérieur spécialement conçu pour vous. Découvrez également notre catalogue de marquage de mur 3D à des prix adaptés à tous les budgets.</p>
+<p>Vous n’arrivez toujours pas à trouver votre bonheur ? PUB INDUSTRIE vous guide vers la solution idéale pour vous. Nos habillages auront de quoi sublimer vos invités ! <br/></p>
+</div>
+<div class="enseigne-image-wrapper">
+<img alt="Stickers mural" class="enseigne-image" src="https://pub-industrie.com/img/post/167084787051713.png"/>
+</div>
+</div>
+</div><div class="enseigne-row row-four">
+<div class="enseigne-container">
+<div class="enseigne-text">
+<h2>Décoration de bureau</h2>
+<p>Rendez vos espaces de travail un lieu agréable, cohérent et harmonieux grâce à une <strong>décoration de bureau</strong> unique et branchée. Pour personnaliser vos bureaux et salles de réunions, PUB INDUSTRIE vous propose une touche d’originalité absolue, via le biais des <strong>tags muraux en vinyle</strong> .</p>
+<p>La <strong>décoration murale d’entreprise</strong> n’a plus de secrets ! Notre société met à votre disposition des designers et des artisans chevronnés, qui se déplaceront chez vous, pour étudier votre projet ainsi que pour inspecter vos locaux. Cette étape, nous permet de vous proposer des matériaux et des finitions plus adaptés à votre environnement professionnel.</p>
+<p>En effet, notre accompagnement, se poursuit tout au long de la fabrication et de la pose des éléments de votre décoration. De plus, nous restons attentifs à chaque demande de votre part. PUB INDUSTRIE est votre conseiller de référence !<br/></p>
+</div>
+<div class="enseigne-image-wrapper">
+<img alt="Décoration de bureau" class="enseigne-image" src="https://pub-industrie.com/img/post/167084807714076.png"/>
+</div>
+</div>
+</div><div class="enseigne-row row-one">
+<div class="enseigne-container">
+<div class="enseigne-text">
+<h2>Enseigne d’intérieur</h2>
+<p>La signalétique ou l’enseigne d’intérieur (pour objectif commercial ou pour informer vos clients et collaborateurs), figure un créneau publicitaire à ne pas manquer. Sa réussite est liée au respect de certains critères de qualité, de visibilité de lisibilité, mais également de longévité.</p>
+<p>Parce que chaque outil de communication est important, PUB INDUSTRIE vous propose la conception et la fabrication de tous types d’e<strong>nseignes d’intérieurs</strong>. En effet, notre entreprise opère à Marrakech, mais pour plus de proximité, nos équipes sont mobiles partout au Maroc.</p>
+<p>Pour faire de la signalisation d’intérieur, communiquer sur vos services ou pour afficher un message corporate dans une réception ou au cœur d’une salle de réunion, faites-appel au savoir-faire de notre entreprise. Pour une éventuelle demande de devis personnalisé, n’hésitez pas de nous faire part de votre demande via notre <a href="/fr/contact" target="_blank">formulaire de contact</a>.<br/></p>
+</div>
+<div class="enseigne-image-wrapper">
+<img alt="Enseigne d’intérieur" class="enseigne-image" src="https://pub-industrie.com/img/post/17065594834633.png"/>
+</div>
+</div>
+</div><div class="enseigne-row row-two">
+<div class="enseigne-container">
+<div class="enseigne-text">
+<h2>Habillage de cloison</h2>
+<p>L’<strong>habillage de cloisons</strong> est une solution idéale pour communiquer ou promouvoir ses services. Il s’intègre facilement sur différents types de cloisons, notamment dans le cadre du travail (Cloisons de bureau) ou encore pour les cloisons de stands (Dans le cadre d’une exposition). À cette optique, l’entreprise PUB INDUSTRIE vous propose son service d’habillage de cloisons à Marrakech et partout au Maroc au meilleur prix du marché.</p>
+<p>Nous mettons à votre disposition un panel d’habillage à satisfaire tous les besoins. Grâce à une technique d’impression et de découpage de dernière génération, nous assurons des rendus qualitatifs avec une finition irréprochable. Découvrez nos produits destinés à l’habillage de cloisons pour petites et grandes dimensions.</p>
+<p>Un projet d’habillage de cloisons à nous confier ? Nous serons ravies de répondre à vos attentes dans le respect des conditions et des délais contractuels.<br/></p>
+</div>
+<div class="enseigne-image-wrapper">
+<img alt="Habillage de cloison" class="enseigne-image" src="https://pub-industrie.com/img/post/167144839364219.png"/>
+</div>
+</div>
+</div><div class="enseigne-row row-three">
+<div class="enseigne-container">
+<div class="enseigne-text">
+<h2>Habillage vitre</h2>
+<p>Il existe une multitude de possibilités pour habiller vos vitres et vitrines. Dans une optique d’originalité, mais également de publicité, nous vous proposons un panel varié d’<strong>habillage de vitres</strong> en <strong>vinyle sablé</strong> pour petits commerces comme pour les grandes surfaces.</p>
+<p>L’habillage des vitres peut se réaliser pour informer sur vos produits et services, pour mettre en avant une vente privée ou une promotion, pour afficher vos tarifs et bien encore. Sois un créneau communicatif par excellence qu’il ne faut pas négliger.</p>
+<p>Pour une pose de décoration <strong>adhésif sablé à Marrakech</strong> ou pour un projet d’habillage publicitaire par excellence, PUB INDUSTRIE est le professionnel qu’il vous faut. Notre équipe de graphistes, est à votre service, pour vous conseiller sur les configurations d’habillage de vitres les plus adaptées à votre besoin. Pose d’adhésif pour vitrine, de lettrage et logo adhésifs, ou d’adhésif micro-perforé, toutes les possibilités sont accessibles à des prix très concurrentiels !</p>
+</div>
+<div class="enseigne-image-wrapper">
+<img alt="Habillage vitre" class="enseigne-image" src="https://pub-industrie.com/img/post/167084882946394.png"/>
+</div>
+</div>
+</div><div class="enseigne-row row-four">
+<div class="enseigne-container">
+<div class="enseigne-text">
+<h2>Tableau mural (impression tableau)</h2>
+<p>PUB INDUSTRIE est votre spécialiste de la fabrication de tableaux à Marrakech et de l’impression tableau en toile depuis 2014. Grâce à des studios de création équipés ainsi que l’esprit créatif de notre équipe, nous accompagnons et conseillons nos clients tout au long de leur projet de décoration. Faites votre choix entre des tableaux modernes, classiques, design ou encore une multitude de stickers muraux standards et personnalisés à satisfaire tous les goûts.</p>
+<p>Parce que chaque projet est unique, nous concevons vos motifs avec minutie en pensant à chaque détail technique. Le but est de vous garantir la bonne tenue de vos tableaux muraux, cohérence esthétique et rigidité. Vous avez une idée ou un design en particulier que vous désirez imprimer ? Confiez-nous la réalisation de votre projet !</p>
+<p>Pour une demande de devis ou pour plus de renseignements, contactez-nous via un simple appel au : <a href="tel:05244-48453" target="_blank">05244-48453</a>.<br/></p>
+</div>
+<div class="enseigne-image-wrapper">
+<img alt="Tableau mural (impression tableau)" class="enseigne-image" src="https://pub-industrie.com/img/post/167084903193646.png"/>
+</div>
+</div>
+</div></section>
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-grid">
+<div class="footer-block contact-block">
+<h3 class="footer-title">
+                    Commencer<br/>
+                    votre projet<br/>
+<span>tout de suite</span>
+</h3>
+<ul class="footer-contact-list">
+<li>
+<a href="tel:+2125">☎ +212 </a>
+</li>
+<li>
+<a href="tel:+2120676487566">✆ +212 676 487 566</a>
+</li>
+<li>
+<a href="mailto:expograph@gmail.com">✉ expograph@gmail.com</a>
+</li>
+</ul>
+<div class="map-box">
+<iframe allowfullscreen="" height="300" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.687466252411!2d-1.9402769000000004!3d34.703443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd78636be90cc269%3A0xe4fa65782a6ea741!2sExpoGraph%20%7C%20Panneaux%20Publicitaires%203D%20Oujda!5e1!3m2!1sfr!2sma!4v1787654601787!5m2!1sfr!2sma" style="border:0;" width="400"></iframe>
+</div>
+</div>
+<div class="footer-block info-block">
+<h3 class="arabic-title">صناعة الإشهار فن وابداع</h3>
+<div class="info-columns">
+<div class="info-column">
+<h4>Horaires</h4>
+<div class="hours-list">
+<p>Lundi au vendredi</p>
+<span>09:00 à 13:00</span>
+<span>14:00 à 18:00</span>
+<p>Samedi</p>
+<span>09:00 à 13:00</span>
+<p>Dimanche</p>
+<span>Fermé</span>
+</div>
+</div>
+<div class="info-column">
+<h4>Menu</h4>
+<ul class="footer-menu">
+<li><a href="#">Qui-sommes nous?</a></li>
+<li><a href="#">Réalisations</a></li>
+<li><a href="#">Palissades de chantier</a></li>
+<li><a href="#">PLV et supports</a></li>
+<li><a href="#">Blog</a></li>
+</ul>
+</div>
+<div class="info-column">
+<h4>Adresse</h4>
+<p>
+                            2eme Etg N°03, N°06 Rue Abou Obeida Ibn Al Jarrah<br/>
+                            Oujda 60000.
+                        </p>
+</div>
+<div class="info-column">
+<h4>Légale</h4>
+<ul class="footer-menu">
+<li><a href="#">Politique de confidentialité</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-block sketch-block">
+<div class="sketch-plate">
+<div class="sketch-mark">
+<img alt="Art graphic" src="https://pub-industrie.com/img/main/Sketch.svg"/>
+</div>
+</div>
+</div>
+<div class="footer-block form-block">
+<h3>Vous avez un projet<br/>contactez nous tout de suite</h3>
+<form class="contact-form">
+<input placeholder="Votre nom et prénom*" type="text"/>
+<input placeholder="Votre numéro de téléphone*" type="tel"/>
+<input placeholder="Votre Email" type="email"/>
+<textarea placeholder="Votre message" rows="5"></textarea>
+<button type="submit">Envoyer</button>
+</form>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="social-row">
+<a aria-label="Facebook" href="#">f</a>
+<a aria-label="Pinterest" href="#">P</a>
+<a aria-label="Instagram" href="#">◎</a>
+<a aria-label="YouTube" href="#">◉</a>
+<a aria-label="LinkedIn" href="#">in</a>
+<a aria-label="Quora" href="#">Q</a>
+</div>
+<p>
+            Les marques déposées sont la propriété de leurs propriétaires respectifs.<br/>
+            © 2008-2026 Pub industrie.
+        </p>
+</div>
+</footer>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.nav-list');
+    const menuItems = document.querySelectorAll('.nav-item.has-submenu');
+    const navLinks = document.querySelectorAll('.nav-link:not(.menu-trigger)');
+
+    let isMobile = window.innerWidth <= 768;
+
+    // Update mobile status on resize
+    window.addEventListener('resize', () => {
+        isMobile = window.innerWidth <= 768;
+        if (window.innerWidth > 768) {
+            navList.classList.remove('mobile-open');
+            hamburger.classList.remove('active');
+        }
+    });
+
+    // Hamburger menu toggle for mobile
+    if (hamburger) {
+        hamburger.addEventListener('click', function (event) {
+            event.stopPropagation();
+            hamburger.classList.toggle('active');
+            navList.classList.toggle('mobile-open');
+        });
+    }
+
+    // Handle submenu toggles
+    menuItems.forEach(item => {
+        const trigger = item.querySelector('.menu-trigger');
+        if (!trigger) return;
+
+        trigger.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            if (isMobile) {
+                // Mobile: toggle this menu only
+                item.classList.toggle('open');
+            } else {
+                // Desktop: close other menus
+                const isOpen = item.classList.contains('open');
+                menuItems.forEach(menuItem => {
+                    menuItem.classList.remove('open');
+                });
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            }
+        });
+    });
+
+    // Close menus when clicking outside
+    document.addEventListener('click', function (event) {
+        if (!event.target.closest('.navbar')) {
+            if (isMobile) {
+                navList.classList.remove('mobile-open');
+                hamburger.classList.remove('active');
+            }
+            menuItems.forEach(item => item.classList.remove('open'));
+        }
+    });
+
+    // Close mobile menu when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            if (isMobile) {
+                navList.classList.remove('mobile-open');
+                hamburger.classList.remove('active');
+            }
+        });
+    });
+</script>
+<script>
+    window.addEventListener('load', function () {
+        window.setTimeout(function () {
+            document.body.classList.add('page-loaded');
+            window.setTimeout(function () {
+                document.body.classList.add('page-animations-started');
+            }, 100);
+        }, 800);
+    });
+</script>
+</body>
+</html>

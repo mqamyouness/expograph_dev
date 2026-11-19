@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Les spécialistes de l’enseigne publicitaire I Pub Industrie Marrakech Maroc</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&amp;family=Barlow+Semi+Condensed:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="asset/css/style.css">
+<style>
+    :root {
+        --blue: #007CFF;
+        --dark-blue: #071A2B;
+        --white: #FFFFFF;
+        --light: #F5F7FA;
+        --text: #071A2B;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #fff;
+        color: var(--dark-blue);
+    }
+
+    /* =========================================
+       MAIN SECTION
+    ========================================= */
+
+    .enseigne-section {
+        width: 100%;
+    }
+
+    /* =========================================
+       EACH ROW
+    ========================================= */
+
+    .enseigne-row {
+        width: 100%;
+        min-height: 420px;
+
+        display: flex;
+        align-items: center;
+
+        padding: 50px 20px;
+    }
+
+    /* =========================================
+       CONTENT WIDTH
+    ========================================= */
+
+    .enseigne-container {
+        width: 100%;
+        max-width: 1200px;
+
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 70px;
+    }
+
+    /* =========================================
+       TEXT
+    ========================================= */
+
+    .enseigne-text {
+        flex: 1;
+        max-width: 540px;
+    }
+
+    .enseigne-text h2 {
+        margin: 0 0 22px 0;
+
+        font-size: 30px;
+        line-height: 1.2;
+
+        font-weight: 700;
+
+        color: var(--dark-blue);
+    }
+
+    .enseigne-text p {
+        margin: 0 0 14px 0;
+
+        font-size: 15px;
+        line-height: 1.65;
+
+        color: var(--dark-blue);
+
+        text-align: left;
+    }
+
+    .enseigne-text strong {
+        font-weight: 700;
+    }
+
+    .blue {
+        color: var(--blue);
+    }
+
+    /* =========================================
+       IMAGE
+    ========================================= */
+
+    .enseigne-image-wrapper {
+        position: relative;
+
+        flex: 0 0 390px;
+
+        width: 390px;
+        height: 330px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        overflow: hidden;
+
+        border: 7px solid var(--blue);
+
+        border-radius:
+            48% 52% 45% 55%
+            /
+            48% 45% 55% 52%;
+    }
+
+    .enseigne-image {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+    }
+
+    /* =========================================
+       ROW 1
+       WHITE
+       TEXT LEFT / IMAGE RIGHT
+    ========================================= */
+
+    .row-one {
+        background: var(--white);
+    }
+
+    .row-one .enseigne-container {
+        flex-direction: row;
+    }
+
+    /* =========================================
+       ROW 2
+       DARK
+       IMAGE LEFT / TEXT RIGHT
+    ========================================= */
+
+    .row-two {
+        background: var(--dark-blue);
+    }
+
+    .row-two .enseigne-container {
+        flex-direction: row-reverse;
+    }
+
+    .row-two .enseigne-text h2 {
+        color: var(--white);
+    }
+
+    .row-two .enseigne-text p {
+        color: var(--white);
+    }
+
+    /* =========================================
+       ROW 3
+       WHITE
+    ========================================= */
+
+    .row-three {
+        background: var(--white);
+    }
+
+    .row-three .enseigne-container {
+        flex-direction: row;
+    }
+
+    .row-three .enseigne-image-wrapper {
+        flex: 0 0 340px;
+
+        width: 340px;
+        height: 285px;
+    }
+
+    /* =========================================
+       ROW 4
+       LIGHT
+    ========================================= */
+
+    .row-four {
+        background: var(--light);
+    }
+
+    .row-four .enseigne-container {
+        flex-direction: row-reverse;
+    }
+
+    .row-four .enseigne-image-wrapper {
+        flex: 0 0 380px;
+
+        width: 380px;
+        height: 330px;
+    }
+
+    /* =========================================
+       DESKTOP LARGE
+    ========================================= */
+
+    @media (min-width: 1400px) {
+
+        .enseigne-container {
+            max-width: 1250px;
+        }
+
+        .enseigne-row {
+            min-height: 470px;
+        }
+
+        .enseigne-text {
+            max-width: 570px;
+        }
+
+        .enseigne-text h2 {
+            font-size: 32px;
+        }
+
+        .enseigne-text p {
+            font-size: 16px;
+        }
+
+        .enseigne-image-wrapper {
+            flex-basis: 420px;
+            width: 420px;
+            height: 350px;
+        }
+
+        .row-three .enseigne-image-wrapper {
+            flex-basis: 370px;
+            width: 370px;
+            height: 310px;
+        }
+
+        .row-four .enseigne-image-wrapper {
+            flex-basis: 410px;
+            width: 410px;
+            height: 350px;
+        }
+    }
+
+    /* =========================================
+       TABLET
+    ========================================= */
+
+    @media (max-width: 900px) {
+
+        .enseigne-row {
+            min-height: auto;
+            padding: 60px 30px;
+        }
+
+        .enseigne-container {
+            max-width: 750px;
+            gap: 40px;
+        }
+
+        .enseigne-text {
+            max-width: 400px;
+        }
+
+        .enseigne-text h2 {
+            font-size: 25px;
+        }
+
+        .enseigne-text p {
+            font-size: 13px;
+        }
+
+        .enseigne-image-wrapper,
+        .row-three .enseigne-image-wrapper,
+        .row-four .enseigne-image-wrapper {
+
+            flex-basis: 280px;
+
+            width: 280px;
+            height: 250px;
+        }
+    }
+
+    /* =========================================
+       MOBILE
+    ========================================= */
+
+    @media (max-width: 650px) {
+
+        .enseigne-row {
+            min-height: auto;
+            padding: 50px 25px;
+        }
+
+        .enseigne-container,
+        .row-two .enseigne-container,
+        .row-four .enseigne-container {
+
+            flex-direction: column;
+
+            gap: 35px;
+
+            align-items: center;
+        }
+
+        .enseigne-text {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .enseigne-text h2 {
+            font-size: 25px;
+        }
+
+        .enseigne-text p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .enseigne-image-wrapper,
+        .row-three .enseigne-image-wrapper,
+        .row-four .enseigne-image-wrapper {
+
+            flex: none;
+
+            width: 300px;
+            height: 260px;
+        }
+    }
+
+    /* =========================================
+       SMALL MOBILE
+    ========================================= */
+
+    @media (max-width: 400px) {
+
+        .enseigne-image-wrapper,
+        .row-three .enseigne-image-wrapper,
+        .row-four .enseigne-image-wrapper {
+
+            width: 260px;
+            height: 230px;
+        }
+
+        .enseigne-text h2 {
+            font-size: 22px;
+        }
+
+        .enseigne-text p {
+            font-size: 13px;
+        }
+    }
+
+</style>
+<meta content="Forte de ses 10 ans d’expérience. Pub Industrie vous garantit les meilleures enseignes lumineuses de Marrakech et du Maroc. Tout en vous assurant le conseil, la création et l’installation." name="description"/></head>
+
+
+<body>
+<div class="page-loader" aria-label="Chargement" role="status">
+    <img src="asset/img/logo-white.png" alt="Expograph">
+</div>
+
+<section class="hero">
+    <div class="hero-yellow"></div>
+    <div class="logo-box">
+        <img
+            src="asset/img/logo.png"
+            alt="Expograph"
+        >
+    </div>
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <nav class="navbar">
+
+        <button class="hamburger" aria-label="Toggle menu" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-list">
+
+            <li class="nav-item has-submenu">
+                <a href="#" class="nav-link menu-trigger">
+                    Enseigne
+                    <span class="arrow">▼</span>
+                </a>
+                <ul class="submenu">
+                    <li><a href="enseignes-lumineuses.html">Enseignes lumineuses</a></li>
+                    <li><a href="enseigne-publicitaire.html">Enseigne publicitaire</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a href="#" class="nav-link menu-trigger">
+                    Panneau
+                    <span class="arrow">▼</span>
+                </a>
+                <ul class="submenu">
+                    <li><a href="panneaux-publicitaires-lumineux.html">Panneaux publicitaires lumineux</a></li>
+                    <li><a href="panneaux-publicitaires-non-lumineux.html">Panneaux publicitaires non lumineux</a></li>
+                    <li><a href="panneaux-drapeau.html">Panneaux drapeau</a></li>
+                    <li><a href="totem-publicitaire-lumineux.html">Totem</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="signaletique.html" class="nav-link">Signalétique</a>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a href="#" class="nav-link menu-trigger">
+                    Habillage
+                    <span class="arrow">▼</span>
+                </a>
+                <ul class="submenu">
+                    <li><a href="habillage-voiture.html">Habillage voiture</a></li>
+                    <li><a href="stickers-muraux.html">Stickers muraux</a></li>
+                    <li><a href="habillage-de-magasin.html">Habillage de magasin</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="impression-serigraphie.html" class="nav-link">Impression et Sérigraphie</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+
+            <li class="nav-item has-submenu language-item">
+                <a href="#" class="nav-link menu-trigger language">
+                    FR
+                    <span class="arrow">▼</span>
+                </a>
+                <ul class="submenu language-submenu">
+                    <li><a href="#">FR</a></li>
+                    <li><a href="#">EN</a></li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </nav>
+    <!-- =====================================================
+         TITLE
+    ====================================================== -->
+
+    <div class="hero-content">
+
+        <h1 class="hero-title">
+            Enseigne publicitaire
+        </h1>
+
+    </div>
+    <!-- =====================================================
+         SERVICES
+    ====================================================== -->
+    <div class="services">
+        <div class="services-grid">
+            <!-- =================================================
+                 1. ENSEIGNE
+            ================================================== -->
+            <div class="service">
+                <img
+                    src="https://pub-industrie.com/img/post/totem-publicitaire-lumineux-marrakech.png"
+                    alt="Fabricant d'enseignes publicitaires sur mesure à Oujda"
+                    title="Enseigne lumineuse sur-mesure à Oujda, Maroc"
+                    class="service-image"
+                >
+                <h2 class="service-title">
+                    Enseigne Lumineuse
+                </h2>
+                <a
+                    href="/fr/nos-metiers/enseignes-lumineuses"
+                    class="service-button"
+                >
+                    Demander des infos
+                </a>
+            </div>
+            <!-- =================================================
+                 2. PANNEAU
+            ================================================== -->
+
+            <div class="service">
+                <img
+                    src="https://pub-industrie.com/img/post/signalétique-marrakech.png"
+                    alt="Enseigne publicitaire & Plaque Signalétique à Oujda, Maroc"
+                    title="Fabricant panneau publicitaire | Conception, Fabrication, Pose"
+                    class="service-image"
+                >
+                <h2 class="service-title">
+                    Enseigne publicitaire
+                </h2>
+                <a
+                    href="/fr/nos-metiers/panneaux-publicitaires-lumineux"
+                    class="service-button"
+                >
+                    Découvrir
+                </a>
+            </div>
+            <!-- =================================================
+                 3. VEHICLE
+            ================================================== -->
+            <div class="service">
+                <img
+                    src="https://pub-industrie.com/img/post/impression-serigraphie-marrakech-maroc.png"
+                    alt="Habillage de voiture Marrakecha"
+                    title="Habillage et Marquage de véhicule à Marrakecha"
+                    class="service-image"
+                >
+                <h2 class="service-title">
+                    Habillage de voiture
+                </h2>
+                <a
+                    href="/fr/nos-metiers/habillage-voiture"
+                    class="service-button"
+                >
+                    En savoir plus
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="enseigne-section">
+
+    <div class="enseigne-row row-one">
+        <div class="enseigne-container">
+            <div class="enseigne-text">
+                <h2><span class="blue">Enseigne</span> publicitaire rétro éclairée en cuivre rouge</h2>
+                <p>Les enseigne rétro-éclairées font partie des supports publicitaires qui ont un fort impact en marketing. De plus de son aspect accrocheur et de sa forte visibilité, cette <strong>enseigne publicitaire de luxe</strong> véhicule également une image unique de modernité et de qualité.</p>
+<p>L’<strong>enseigne publicitaire en laiton rouge</strong> est une solution qui vous permet à la fois d’apporter de la lumière et de la visibilité à votre enseigne tout en visant une gamme de luxe et de raffinement. Le cuivre, pour sa part est une matière reconnue par sa noblesse, et qui au paravent, rentrait uniquement dans la confection des objets de valeur.</p>
+<p>Depuis 2014, PUB INDUSTRIE s’engage à offrir à ses clients, un rendu qualitatif avec un bon rapport qualité prix. Cela se concrétise grâce à notre savoir-faire que nous avons accumulé, mais également perfectionné durant toutes ces années. Sans oublier nos collaborateurs chevronnés, qui se dotent des connaissances techniques adéquates pour réaliser tout type de <strong>pancarte publicitaire Marrakech</strong>.</p>
+            </div>
+            <div class="enseigne-image-wrapper">
+                <img src="https://pub-industrie.com/img/post/167001738255067.png" alt="Enseigne publicitaire rétro éclairée en cuivre rouge" class="enseigne-image">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="enseigne-row row-two">
+        <div class="enseigne-container">
+            <div class="enseigne-text">
+                <h2><span class="blue">Enseigne</span> en laiton jaune rétro éclairé</h2>
+                <p>Le cuivre jaune est le résultat de la fusion de deux matières qui sont le cuivre et le zinc. Une matière fascinante qui se caractérise par plusieurs propriétés comme la conductibilité, la forte résistance à la corrosion ainsi que l’aspect luxueux qu’elle reflète. À ce niveau, une <strong>enseigne publicitaire en cuivre jaune</strong>, ne pourra que jouer favorablement sur votre image de marque.</p>
+<p>Si vous désirez miser sur une communication visuelle saisissante le jour comme la nuit, PUB INDUSTRIE vous accompagne dans tout le processus de la <strong>fabrication d’enseigne publicitaire</strong> au Maroc. Vous aurez ainsi le support publicitaire qui vous démarquera de la concurrence à des prix très attractifs.</p>
+<p>Nos matériaux qualitatifs, notre design bien pensé ainsi que notre finition irréprochable, vous offriront une communication d’entreprise réussie. Vous désirez concevoir une enseigne personnalisée ? Vous êtes à la bonne adresse !</p>
+            </div>
+            <div class="enseigne-image-wrapper">
+                <img src="https://pub-industrie.com/img/post/167001807327893.png" alt="Enseigne en laiton jaune rétro éclairé" class="enseigne-image">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="enseigne-row row-three">
+        <div class="enseigne-container">
+            <div class="enseigne-text">
+                <h2><span class="blue">Enseignes</span> publicitaires en inox brillant</h2>
+                <p>Voter pour la technique du rétro-éclairage, vous offre une luminosité optimale et discrète. Sois une propriété visuelle sobre et très élégante. Dans cette technique, la lumière est placée soigneusement à l’arrière de la lettre, ce qui procure un éclairage homogène tout en respectant ainsi le design.</p>
+<p>Le choix de l’<b>enseigne publicitaire en inox brillant</b> est idéal pour plusieurs types d’activités. L’inox brillant pour sa part se caractérise par son aspect esthétique, sa longévité ainsi que sa facilité d’entretien. Pour une fabrication d’<b>enseigne publicitaire de restaurant à Marrakech</b>, faites appel à notre service.</p>
+<p>Nous sommes en mesure de créer et de fabriquer des enseignes publicitaires de toutes les dimensions, dans le respect de différentes enveloppes budgétaires. Depuis l’étude de votre projet jusqu’à la pose, un seul interlocuteur sera à votre service.<br/></p>
+            </div>
+            <div class="enseigne-image-wrapper">
+                <img src="https://pub-industrie.com/img/post/167001844724225.png" alt="Enseignes publicitaires en inox brillant" class="enseigne-image">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="enseigne-row row-four">
+        <div class="enseigne-container">
+            <div class="enseigne-text">
+                <h2><span class="blue">Enseigne</span> de magasin inox brossé</h2>
+                <p>Les <strong>enseignes publicitaires rétro éclairées en inox</strong> brossé sont l’un les supports les plus demandés. Plus particulièrement dans les secteurs de la restauration et des commerces. L’effet brossé de l’inox est le résultat d’une opération d’abrasion qui se pratique sur un sens de longueur. Ce traitement, offre un aspect rayé élégant et discret.</p>
+<p>Vous désirez concevoir une <strong>enseigne publicitaire de snack</strong> à base d’inox brossé ? Faites appel à l’entreprise PUB INDUSTRIE à Marrakech. Votre expert dans la conception et la <strong>fabrication des enseignes publicitaires leds</strong> depuis 2014.</p>
+<p>Nous mettons tout en œuvre pour la réalisation de votre enseigne lumineuse dans les meilleures conditions. De plus, nous assurons un accompagnement personnalisé, pour un service de dépannage ou d’entretien de votre support publicitaire. Pour une demande de devis gratuite et sans engagement, n’hésitez pas de nous <a href="/fr/contact" target="_blank">contacter</a>.<br/></p>
+            </div>
+            <div class="enseigne-image-wrapper">
+                <img src="https://pub-industrie.com/img/post/167145074339765.png" alt="Enseigne de magasin inox brossé" class="enseigne-image">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="enseigne-row row-one">
+        <div class="enseigne-container">
+            <div class="enseigne-text">
+                <h2><span class="blue">Enseignes</span> publicitaires en métal laqué</h2>
+                <p>Faites connaître votre entreprise grâce à une <strong>enseigne publicitaire rétro éclairée en métal laqué</strong> sur mesure. Quel que soit votre budget, PUB INDUSTRIE s’adapte à votre demande. Nous vous créons un support publicitaire attirant, qui va encourager votre clientèle à pousser la porte de votre magasin sans hésitation.</p>
+<p>Pour la conception d’une enseigne publicitaire de galerie à Marrakech, ou une <strong>enseigne publicitaire vintage</strong>, n’hésitez pas d’échanger avec nous. Notre entreprise basée au cœur de la ville ocre, déploie son savoir-faire technique en faveur de votre identité.</p>
+<p>Les panneaux publicitaires rétro-éclairées en métal, représentent un excellent choix pour communiquer autour de votre activité. De plus de leur aspect esthétique et épuré, le support est d’une grande résistance et facile à entretenir. Pour plus de renseignements, n’hésitez pas d’échanger avec nous autour de votre projet.<br/></p>
+            </div>
+            <div class="enseigne-image-wrapper">
+                <img src="https://pub-industrie.com/img/post/167001738255067.png" alt="Enseignes publicitaires en métal laqué" class="enseigne-image">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="enseigne-row row-two">
+        <div class="enseigne-container">
+            <div class="enseigne-text">
+                <h2><span class="blue">Enseigne</span> de magasin en aluminium</h2>
+                <p>Pour un support à la fois élégant et robuste, votez pour l’aluminium. Une <strong>enseigne publicitaire rétro éclairée en aluminium</strong> est très convoitée pour communiquer autour de votre entreprise. L’aluminium est un matériau réputé pour sa légèreté, sa longévité, sa haute résistance à la corrosion ainsi que sa facilité d’entretien.</p>
+<p>Pour vos travaux de conception et de fabrication d’enseigne, faites appel au savoir-faire de notre entreprise, votre <strong>enseigniste Marrakech</strong> réputé depuis 2014 ; La technique du rétro éclairage, offre une luminosité non agressive, ce qui procure à votre pancarte, un style à la fois sobre et élégant. De plus, elle permet de mettre en valeur le design de l’écriture jusqu’au petit détail. Sois un excellent support pour communiquer autour de votre marque.</p>
+<p>Qu’attendez-vous pour se démarquer du voisinage ? Pour une demande de devis, contactez PUB INDUSTRIE via un simple appel. <br/></p>
+            </div>
+            <div class="enseigne-image-wrapper">
+                <img src="https://pub-industrie.com/img/post/167001928936877.png" alt="Enseigne de magasin en aluminium" class="enseigne-image">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="enseigne-row row-three">
+        <div class="enseigne-container">
+            <div class="enseigne-text">
+                <h2><span class="blue">Enseigne</span> en forex</h2>
+                <p>Vous recherchez une <strong>enseigne publicitaire de magasin</strong> pour la devanture ou la vitrine ? Qu’il s’agisse d’un restaurant, une boulangerie, une agence immobilière ou tout autre type de commerce, votez pour une <strong>enseigne publicitaire rétro éclairée en forex</strong>.</p>
+<p>En effet, le forex est un matériau en pvc, qui se caractérise par sa légèreté et sa résistance aux intempéries. Les <strong>pancartes publicitaires</strong> fabriquées à base de forex figurent des supports rigides et faciles à poser au-dessus d’une vitrine. Il suffit de choisir la bonne épaisseur pour chaque besoin.</p>
+<p>Pour répondre à chaque demande, nous procédons à une étude préliminaire des lieux ainsi que des attentes de notre client. Cette étude nous permet de lui proposer la configuration la plus adéquate à son enseigne. Qu’il s’agisse d’une <strong>enseigne publicitaire animé</strong> ou simple, un large choix de matériaux est à votre disposition chez PUB INDUSTRIE à Marrakech.<br/></p>
+            </div>
+            <div class="enseigne-image-wrapper">
+                <img src="https://pub-industrie.com/img/post/167001944583500.png" alt="Enseigne en forex" class="enseigne-image">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="enseigne-row row-four">
+        <div class="enseigne-container">
+            <div class="enseigne-text">
+                <h2><span class="blue">Enseigne</span> publicitaire en MDF laqué</h2>
+                <p>Notre entreprise spécialisée dans la communication visuelle et la fabrication d’<strong>enseigne publicitaire extérieure à Marrakech et au Maroc</strong>, est à votre service. Pour tous travaux de conception et de pose d’<strong>enseigne en MDF</strong> laqué, faites appel à notre savoir-faire.<br/></p>
+<p>En effet, le MDF dignifie (Medium Density Fiberboard) ou le panneau de fibres à densité moyenne, est un matériau solide, stable et design. Il se caractérise également, par sa grande résistance aux intempéries et aux changements d’humidité. Ce qui fait de lui, un excellent choix pour une pose extérieure.</p>
+<p>Pour la fabrication de panneaux publicitaires de toutes les dimensions, nous procédons en premier lieu à une étude technique de votre projet. Celle-ci nous mène à bien élire les matériaux les épaisseurs ainsi que les modes d’éclairage les plus adaptés à votre activité. Pour vous démarquer de votre voisinage, aucun détail ne doit être manqué.<br/></p>
+            </div>
+            <div class="enseigne-image-wrapper">
+                <img src="https://pub-industrie.com/img/post/167001980331421.png" alt="Enseigne publicitaire en MDF laqué" class="enseigne-image">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="enseigne-row row-one">
+        <div class="enseigne-container">
+            <div class="enseigne-text">
+                <h2><span class="blue">Enseigne</span> publicitaire habillé en vinyle</h2>
+                <p>Le vinyle représente de nombreux avantages, il est à la fois facile à façonner, à poser, mais aussi à entretenir. Le matériau est idéal pour un usage à long terme, vu sa grande résistance aux intempéries extérieures, notamment la pluie, la chaleur et le froid.</p>
+<p>Pour un service de fabrication d’enseigne publicitaire rétro éclairée habillée en vinyle à Marrakech, sollicitez le savoir-faire de notre équipe. Quelle que soit votre enveloppe budgétaire, nous vous fournissons la pancarte la mieux pensée pour votre activité. Vous aurez ainsi la visibilité que vous désirez, la lisibilité absolue, ainsi que le design et les couleurs qui attireront l’attention de vos prospects.</p>
+<p>Pour la création d’une enseigne publicitaire vintage ou moderne à la hauteur de votre image, notre équipe marketing saura vous conseiller et vous accompagner tout au long de votre projet. Parce que chaque demande de création publicitaire est particulière, nous déployons tous les moyens matériaux et humains pour répondre à vos attentes, dans les meilleurs délais.<br/></p>
+            </div>
+            <div class="enseigne-image-wrapper">
+                <img src="https://pub-industrie.com/img/post/167001738255067.png" alt="Enseigne publicitaire habillé en vinyle" class="enseigne-image">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="enseigne-row row-two">
+        <div class="enseigne-container">
+            <div class="enseigne-text">
+                <h2><span class="blue">Enseigne</span> créative</h2>
+                <p>Plusieurs sont les raisons pour choisir une <strong>enseigne publicitaire rétro éclairée créative</strong>. En premier, c’est un support qui communique davantage sur votre image de marque. Il vous sert tel un point de repère qui marquera l’esprit de vos prospects.</p>
+<p>Étant conscients de l’importance des <strong>enseignes éclairées</strong>, et de leur impact sur les passants, que nous mettons tout en œuvre pour vous livrer un support adéquat à votre commerce. Nos ateliers équipés de machines et matériaux de dernière génération, ainsi que nos compétences humaines opérant à Marrakech, mettront tout en œuvre pour vous livrer dans les meilleures conditions.</p>
+<p>Faites le choix de votre rétro-éclairage ainsi que du support de votre enseigne, parmi un large choix qui s’offre à vous chez PUB INDUSTRIE, votre <strong>enseigniste Marrakech</strong> réputé depuis 2014. Pour plus de renseignements, n’hésitez pas d’échanger avec nous autour de votre projet. Nous nous ferons un plaisir de vous servir.<br/></p>
+            </div>
+            <div class="enseigne-image-wrapper">
+                <img src="https://pub-industrie.com/img/post/167144983131577.png" alt="Enseigne créative" class="enseigne-image">
+            </div>
+        </div>
+    </div>
+
+</section>
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-grid">
+
+            <div class="footer-block contact-block">
+
+                <h3 class="footer-title">
+                    Commencer<br>
+                    votre projet<br>
+                    <span>tout de suite</span>
+                </h3>
+
+                <ul class="footer-contact-list">
+                    <li>
+                        <a href="tel:+2125">☎ +212 </a>
+                    </li>
+                    <li>
+                        <a href="tel:+2120676487566">✆ +212 676 487 566</a>
+                    </li>
+                    <li>
+                        <a href="mailto:expograph@gmail.com">✉ expograph@gmail.com</a>
+                    </li>
+                </ul>
+
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.687466252411!2d-1.9402769000000004!3d34.703443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd78636be90cc269%3A0xe4fa65782a6ea741!2sExpoGraph%20%7C%20Panneaux%20Publicitaires%203D%20Oujda!5e1!3m2!1sfr!2sma!4v1787654601787!5m2!1sfr!2sma"
+                     width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+                     referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+
+            </div>
+
+            <div class="footer-block info-block">
+
+                <h3 class="arabic-title">صناعة الإشهار فن وابداع</h3>
+
+                <div class="info-columns">
+
+                    <div class="info-column">
+                        <h4>Horaires</h4>
+                        <div class="hours-list">
+                            <p>Lundi au vendredi</p>
+                            <span>09:00 à 13:00</span>
+                            <span>14:00 à 18:00</span>
+                            <p>Samedi</p>
+                            <span>09:00 à 13:00</span>
+                            <p>Dimanche</p>
+                            <span>Fermé</span>
+                        </div>
+                    </div>
+
+                    <div class="info-column">
+                        <h4>Menu</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#">Qui-sommes nous?</a></li>
+                            <li><a href="#">Réalisations</a></li>
+                            <li><a href="#">Palissades de chantier</a></li>
+                            <li><a href="#">PLV et supports</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="info-column">
+                        <h4>Adresse</h4>
+                        <p>
+                            2eme Etg N°03, N°06 Rue Abou Obeida Ibn Al Jarrah<br>
+                            Oujda 60000.
+                        </p>
+                    </div>
+
+                    <div class="info-column">
+                        <h4>Légale</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#">Politique de confidentialité</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-block sketch-block">
+                <div class="sketch-plate">
+                    <div class="sketch-mark">
+                        <img src="https://pub-industrie.com/img/main/Sketch.svg" alt="Art graphic">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-block form-block">
+
+                <h3>Vous avez un projet<br>contactez nous tout de suite</h3>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Votre nom et prénom*">
+                    <input type="tel" placeholder="Votre numéro de téléphone*">
+                    <input type="email" placeholder="Votre Email">
+                    <textarea rows="5" placeholder="Votre message"></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="social-row">
+            <a href="https://www.facebook.com/share/1DKUH22eXR/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/expographagency?exln=cG9rdXYwdXNiYWFj&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.tiktok.com/@expographagency?_r=1&_t=ZN-9AfhK6sAJ8A" aria-label="TikTOK"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+        </div>
+
+        <p>
+            Les marques déposées sont la propriété de leurs propriétaires respectifs.<br>
+            © 2008-2026 Pub industrie.
+        </p>
+
+    </div>
+
+</footer>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.nav-list');
+    const menuItems = document.querySelectorAll('.nav-item.has-submenu');
+    const navLinks = document.querySelectorAll('.nav-link:not(.menu-trigger)');
+
+    let isMobile = window.innerWidth <= 768;
+
+    // Update mobile status on resize
+    window.addEventListener('resize', () => {
+        isMobile = window.innerWidth <= 768;
+        if (window.innerWidth > 768) {
+            navList.classList.remove('mobile-open');
+            hamburger.classList.remove('active');
+        }
+    });
+
+    // Hamburger menu toggle for mobile
+    if (hamburger) {
+        hamburger.addEventListener('click', function (event) {
+            event.stopPropagation();
+            hamburger.classList.toggle('active');
+            navList.classList.toggle('mobile-open');
+        });
+    }
+
+    // Handle submenu toggles
+    menuItems.forEach(item => {
+        const trigger = item.querySelector('.menu-trigger');
+        if (!trigger) return;
+
+        trigger.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            if (isMobile) {
+                // Mobile: toggle this menu only
+                item.classList.toggle('open');
+            } else {
+                // Desktop: close other menus
+                const isOpen = item.classList.contains('open');
+                menuItems.forEach(menuItem => {
+                    menuItem.classList.remove('open');
+                });
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            }
+        });
+    });
+
+    // Close menus when clicking outside
+    document.addEventListener('click', function (event) {
+        if (!event.target.closest('.navbar')) {
+            if (isMobile) {
+                navList.classList.remove('mobile-open');
+                hamburger.classList.remove('active');
+            }
+            menuItems.forEach(item => item.classList.remove('open'));
+        }
+    });
+
+    // Close mobile menu when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            if (isMobile) {
+                navList.classList.remove('mobile-open');
+                hamburger.classList.remove('active');
+            }
+        });
+    });
+</script>
+
+<script>
+    window.addEventListener('load', function () {
+        window.setTimeout(function () {
+            document.body.classList.add('page-loaded');
+            window.setTimeout(function () {
+                document.body.classList.add('page-animations-started');
+            }, 300);
+        }, 1500);
+    });
+</script>
+
+</body>
+</html>
